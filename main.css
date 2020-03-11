@@ -1,6 +1,6 @@
 body,
 html {
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.5em;
 	/* Height and Width for landing page image to cover 100% */
 	min-height: 100%;
@@ -22,22 +22,27 @@ h4,
 h5,
 h6 {
 	font-family: 'Lato', sans-serif;
+	/* font-family: 'Play', sans-serif; */
 }
 body {
 	border: 1px solid black;
 	text-align: center;
+	width: 80%;
+	padding-top: 60px;
 }
 
 header {
 	width: 100vw;
 }
 .logo_img {
-	width: 20%;
+	width: 22%;
 	height: 70px;
 }
+
+/* **************** navbar ***************** */
 #navbar {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	background: black;
 	color: white;
@@ -62,13 +67,20 @@ header {
 	background-color: #ddd;
 }
 
+/* **************** about ***************** */
 .about {
 	margin-top: 70px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: auto;
+	width: 100%;
 }
+/* .about h1 {
+	border: 1px solid gray;
+	width: 100%;
+} */
 .about .id-photo {
 	width: 100%;
 	/* margin-bottom: 5px; */
@@ -82,7 +94,72 @@ header {
 	margin-bottom: 20px;
 }
 .about-card h1 {
+	width: 100%;
 	margin-bottom: 10px;
 	padding-bottom: 30px;
-	border-bottom: 1px solid rgb(106, 106, 106);
+	/* border-bottom: 1px solid rgb(106, 106, 106); */
+}
+.about-content {
+	display: flex;
+	width: 100%;
+	/* flex-direction: column; */
+	justify-content: space-evenly;
+}
+.about-content-right {
+	display: flex;
+	flex-direction: row;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.top-content h1 {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 15px;
+	width: 100%;
+}
+.bottom-content {
+	width: 80%;
+}
+.bottom-content h1 {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 15px;
+	width: auto;
+}
+.bottom-content-info {
+	text-align: center;
+	align-items: center;
+	/* width: 80%; */
+}
+
+/* **************** contact ***************** */
+.contact {
+	/* display: flex;
+	flex-direction: column; */
+	/* justify-content: center; */
+	width: 80%;
+	/* align-items: center; */
+	margin: auto;
+}
+.contact-container {
+	display: flex;
+	flex-direction: row;
+	/* flex-direction: column; */
+	justify-content: space-evenly;
+	margin: 5px auto;
+	padding-right: 20px;
+}
+
+.contact h1 {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 15px;
+	width: 100%;
+}
+ul {
+	display: inline-block;
+}
+li {
+	text-align: left;
 }
