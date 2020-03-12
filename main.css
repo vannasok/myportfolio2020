@@ -25,7 +25,7 @@ h6 {
 	/* font-family: 'Play', sans-serif; */
 }
 body {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	text-align: center;
 	width: 80%;
 	padding-top: 60px;
@@ -162,4 +162,20 @@ ul {
 }
 li {
 	text-align: left;
+}
+
+/* **************** mobile screen ***************** */
+@media only screen and (max-width: 600px) {
+	body {
+		width: 90%;
+		border: 0px;
+		margin: auto;
+		font-size: 16px;
+	}
+	.about-content {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		padding: 2px auto;
+	}
 }
