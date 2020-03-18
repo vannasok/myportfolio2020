@@ -21,8 +21,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Lato', sans-serif;
-	/* font-family: 'Play', sans-serif; */
+	font-family: 'Baloo Chettan 2', cursive;
+
 	width: 100%;
 }
 body {
@@ -36,8 +36,11 @@ header {
 	width: 100vw;
 }
 .logo_img {
-	width: 22%;
-	height: 70px;
+	width: 00px;
+}
+span {
+	font-family: 'Liu Jian Mao Cao', cursive;
+	font-size: 30px;
 }
 
 /* **************** navbar ***************** */
@@ -90,6 +93,8 @@ header {
 	width: 100%;
 	/* margin-bottom: 5px; */
 	border-bottom: 1px solid grey;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 .about-content {
 	display: flex;
@@ -101,7 +106,8 @@ header {
 .about-card {
 	position: relative;
 	box-shadow: 0 1.2px 4px 0 black;
-	border-radius: 5px;
+	border-radius: 10px;
+
 	width: 300px;
 	margin-bottom: 20px;
 }
@@ -152,7 +158,7 @@ header {
 	width: 100%;
 	/* align-items: center; */
 	margin: 15px auto;
-	background: rgb(245, 245, 245);
+	/* background: rgb(245, 245, 245); */
 }
 .contact-container {
 	display: flex;
@@ -163,7 +169,13 @@ header {
 	margin: 5px auto;
 	padding-right: 20px;
 }
-
+.contact-img {
+	/* max-width: 100%; */
+	margin-top: 30px;
+	padding-top: 30px;
+	max-width: 100%;
+	height: auto;
+}
 .contact h1 {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
@@ -176,10 +188,74 @@ ul {
 li {
 	text-align: left;
 }
+
+/* **************** projects ***************** */
+.project-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.project-container h1 {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 15px;
+	width: 100%;
+}
+.project-showcase {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	width: 100%;
+	/* border: 1px solid black; */
+}
+.project-card img {
+	width: 100%;
+}
+.project-card {
+	width: 40%;
+	border: 1px solid grey;
+	border-radius: 20px;
+	position: relative;
+	box-shadow: 0 1.2px 4px 0 black;
+	margin: 20px;
+	margin-left: 80px;
+}
+
+.project-button-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 15px auto;
+	padding: 15px auto;
+}
+.project-button-container button {
+	color: #4d4d4d;
+	background-color: white;
+	border: 1px solid #4d4d4d;
+	padding: 10px 10px;
+	border-radius: 30px;
+	cursor: pointer;
+	margin: 10px 10px;
+	/* opacity: 0.6; */
+	transition: 0.3s;
+	display: inline-block;
+	width: 20%;
+	/* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	outline: none;
+}
+
+.project-button-container button:hover {
+	/* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+	color: white;
+	background-color: #4d4d4d;
+}
+
 /* **************** work ***************** */
 #work {
 	width: 100%;
 	text-align: center;
+	background: rgb(245, 245, 245);
 }
 #work h1 {
 	border-top: 1px solid gray;
@@ -197,9 +273,6 @@ li {
 	flex-wrap: wrap;
 	padding: 0px 20px;
 }
-/* .work-content > * {
-	flex: 1 1 50%;
-} */
 .work-item {
 	width: 50%;
 }
@@ -209,6 +282,7 @@ li {
 .work-item {
 	text-align: start;
 }
+
 /* **************** mobile screen ***************** */
 @media only screen and (max-width: 600px) {
 	body {
@@ -223,4 +297,24 @@ li {
 		margin: auto;
 		padding: 2px auto;
 	}
+	.project-card {
+		width: 80%;
+	}
+}
+
+.parallax-contact {
+	background-image: url(img/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax-about {
+	background-image: url(img/danielle-macinnes-IuLgi9PWETU-unsplash.jpg);
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
